@@ -2,4 +2,4 @@
 
 Just see the figure...
 
-http://dynamic-entity-engine.googlecode.com/files/AnotherExample.jpg
+<img src="http://dynamic-entity-engine.googlecode.com/files/AnotherExample.jpg" alt="Another Example" width="800" height="600"/>
