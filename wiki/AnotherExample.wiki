@@ -1,3 +1,5 @@
-= Yet an example of classic OO hierarchy/aggregation difficulty =
+= Yet an example of classical OO-hierarchy difficulty =
 
 Just see the figure...
+
+http://dynamic-entity-engine.googlecode.com/files/AnotherExample.jpg
