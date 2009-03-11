@@ -1,0 +1,3 @@
+= Yet an example of classic OO hierarchy/aggregation difficulty =
+
+Just see the figure...
