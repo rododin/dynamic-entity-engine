@@ -24,7 +24,7 @@ http://dynamic-entity-engine.googlecode.com/files/AnotherExample.jpg
 
 There are two problems with this example:
 
- === Problem 1 – Further extension of the `Unit` hierarchy ===
+=== Problem 1 – Further extension of the `Unit` hierarchy ===
 
 Really all of your units don’t represent a pure Melee, Ranged, or another class. Mostly of them combine two or more classes. E.g., what to do if you want to get a unit like `DragonRider`? This unit represents a mage – the master of dragons. It is a `MagicUnit`, because may cast a lot of spells and use magic in other ways. But also it is a flying `AirUnit`, because it is a really flying Black Dragon. As well as it is a `DrivenUnit`, because the Dragon is being driven by the mage-rider. Other examples are the lots of miscellaneous cavalry units introduced in “Heroes of Might and Magic”. Also the archery units may act as melee units, of course with reduced attack power using daggers or something like that, but any way. And finally you may want to create a mixed `MeleeRangedMagicUnit`, e.g. the well known `Titan` – good in the both attack types: a) attacking enemies from long distance with lightning arrows (the arrows powered with magic) and b) attacking from short distance with his terrible thunder blade (also powered with magic). Additionally you may give him an ability to cast some lightning-related spells. 
 I believe you see now it would be extremely hard to extend and manage the `Unit` hierarchy, if you will even have a complete multiple inheritance support provided in C++ or CLOS.
