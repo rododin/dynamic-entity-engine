@@ -3,15 +3,11 @@
  * (C) 2006-2009 Rod Odin.
  */
 
-package ru.rododin.dynamic_entity;
+package ru.rododin.dynamic_entity_engine;
 
-import java.util.Collection;
-import java.util.List;
-
-import ru.rododin.dynamic_entity.unit.Unit;
-import ru.rododin.dynamic_entity.unit.UnitDefinition;
-import ru.rododin.dynamic_entity.unit.UnitPropertyDefinition;
-import ru.rododin.dynamic_entity.util.Collections;
+import ru.rododin.dynamic_entity_engine.demo.unit.Unit;
+import ru.rododin.dynamic_entity_engine.demo.unit.UnitDefinition;
+import ru.rododin.dynamic_entity_engine.demo.unit.UnitPropertyDefinition;
 
 /**
  * Description.

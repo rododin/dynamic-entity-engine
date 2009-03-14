@@ -3,11 +3,11 @@
  * (C) 2006-2009 Rod Odin.
  */
 
-package ru.rododin.dynamic_entity.entity;
+package ru.rododin.dynamic_entity_engine.entity;
 
 /**
  * Represents a single abstract property (parameter) of an
- * <code>{@link ru.rododin.dynamic_entity.entity.Entity}</code>.
+ * <code>{@link ru.rododin.dynamic_entity_engine.entity.Entity}</code>.
  * Any property is defined by its <code>{@link #getDescriptor() descriptor}</code>
  * and has a <code>{@link #setValue(Object) modifiable}</code>
  * <code>{@link #getValue() value}</code>.
@@ -19,7 +19,7 @@ public interface Property <Value>
 {
   /**
    * Returns the property descriptor.
-   * @return non-<code>null</code> <code>{@link ru.rododin.dynamic_entity.entity.PropertyDescriptor}</code>
+   * @return non-<code>null</code> <code>{@link ru.rododin.dynamic_entity_engine.entity.PropertyDescriptor}</code>
    *         instance
    */
   PropertyDescriptor<Value> getDescriptor();

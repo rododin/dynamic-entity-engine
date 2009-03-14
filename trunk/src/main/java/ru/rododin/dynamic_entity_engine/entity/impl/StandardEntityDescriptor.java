@@ -3,27 +3,27 @@
  * (C) 2006-2009 Rod Odin.
  */
 
-package ru.rododin.dynamic_entity.entity.impl;
+package ru.rododin.dynamic_entity_engine.entity.impl;
 
 import java.util.Set;
 
-import ru.rododin.dynamic_entity.entity.EntityDescriptor;
-import ru.rododin.dynamic_entity.entity.PropertyDescriptor;
+import ru.rododin.dynamic_entity_engine.entity.EntityDescriptor;
+import ru.rododin.dynamic_entity_engine.entity.PropertyDescriptor;
 
 /**
  * A standard (default) useful implementation of the
- * <code>{@link ru.rododin.dynamic_entity.entity.EntityDescriptor}</code> interface.
+ * <code>{@link ru.rododin.dynamic_entity_engine.entity.EntityDescriptor}</code> interface.
  * @author Rod Odin
  */
 public class StandardEntityDescriptor
   implements EntityDescriptor
 {
   /**
-   * Creates a new <code>{@link ru.rododin.dynamic_entity.entity.EntityDescriptor}</code>
+   * Creates a new <code>{@link ru.rododin.dynamic_entity_engine.entity.EntityDescriptor}</code>
    * with the given parameters.
    * @param name the name of the entity
    * @param propertyDescriptors the set of the
-   *                            <code>{@link ru.rododin.dynamic_entity.entity.PropertyDescriptor}</code>s
+   *                            <code>{@link ru.rododin.dynamic_entity_engine.entity.PropertyDescriptor}</code>s
    *                            introducing the entity properties
    */
   public StandardEntityDescriptor(String name, Set<PropertyDescriptor> propertyDescriptors)
@@ -44,7 +44,7 @@ public class StandardEntityDescriptor
   }
 
   /**
-   * Returns a set of <code>{@link ru.rododin.dynamic_entity.entity.PropertyDescriptor}</code>s
+   * Returns a set of <code>{@link ru.rododin.dynamic_entity_engine.entity.PropertyDescriptor}</code>s
    * describing the entity properties.
    * @return <code>null</code>, empty or non-empty ordered set of the property descriptors in the order
    *         the properties (or descriptors) have been registered for the entity
