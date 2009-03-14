@@ -3,10 +3,10 @@
  * (C) 2006-2009 Rod Odin.
  */
 
-package ru.rododin.dynamic_entity.unit;
+package ru.rododin.dynamic_entity_engine.demo.unit;
 
-import ru.rododin.dynamic_entity.entity.PropertyDescriptor;
-import ru.rododin.dynamic_entity.entity.impl.StandardPropertyDescriptor;
+import ru.rododin.dynamic_entity_engine.entity.PropertyDescriptor;
+import ru.rododin.dynamic_entity_engine.entity.impl.StandardPropertyDescriptor;
 
 /**
  * Introduces definitions for all the units supported by the system.
@@ -84,7 +84,7 @@ public enum UnitDefinition
   }
 
   /**
-   * Returns the <code>{@link ru.rododin.dynamic_entity.entity.PropertyDescriptor}</code>s describing
+   * Returns the <code>{@link ru.rododin.dynamic_entity_engine.entity.PropertyDescriptor}</code>s describing
    * this unit definition.
    * @return non-<code>null</code> and non-empty array of property descriptors
    */
@@ -94,9 +94,9 @@ public enum UnitDefinition
   }
 
   /**
-   * Please use this method to create a new <code>{@link ru.rododin.dynamic_entity.unit.Unit}</code>
+   * Please use this method to create a new <code>{@link ru.rododin.dynamic_entity_engine.demo.unit.Unit}</code>
    * instance specified by this unit definition.
-   * @return a non-<code>null</code> <code>{@link ru.rododin.dynamic_entity.unit.Unit}</code> instance
+   * @return a non-<code>null</code> <code>{@link ru.rododin.dynamic_entity_engine.demo.unit.Unit}</code> instance
    */
   public Unit create()
   {

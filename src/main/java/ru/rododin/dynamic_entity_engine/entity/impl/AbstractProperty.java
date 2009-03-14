@@ -3,19 +3,19 @@
  * (C) 2006-2009 Rod Odin.
  */
 
-package ru.rododin.dynamic_entity.entity.impl;
+package ru.rododin.dynamic_entity_engine.entity.impl;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import ru.rododin.dynamic_entity.entity.Property;
-import ru.rododin.dynamic_entity.entity.PropertyDescriptor;
+import ru.rododin.dynamic_entity_engine.entity.Property;
+import ru.rododin.dynamic_entity_engine.entity.PropertyDescriptor;
 
 /**
  * Represents a default useful implementation of the
- * <code>{@link ru.rododin.dynamic_entity.entity.Property}</code> interface.
+ * <code>{@link ru.rododin.dynamic_entity_engine.entity.Property}</code> interface.
  * The class implements all the methods and defined as an abstract just because
- * it doesn't represent a concrete <code>{@link ru.rododin.dynamic_entity.entity.Property}</code>
+ * it doesn't represent a concrete <code>{@link ru.rododin.dynamic_entity_engine.entity.Property}</code>
  * and the <code>Value</code> generic parameter is still undefined here.
  * @param <Value> the value generic type
  * @author Rod Odin
@@ -26,15 +26,15 @@ public abstract class AbstractProperty <Value>
 // Constructing ------------------------------------------------------------------------------------
 
   /**
-   * Creates a new <code>{@link ru.rododin.dynamic_entity.entity.Property}</code>
+   * Creates a new <code>{@link ru.rododin.dynamic_entity_engine.entity.Property}</code>
    * instance using the given
-   * <code>{@link ru.rododin.dynamic_entity.entity.PropertyDescriptor descriptor}</code>.
+   * <code>{@link ru.rododin.dynamic_entity_engine.entity.PropertyDescriptor descriptor}</code>.
    * <p/>
-   * Please note, the <code>{@link ru.rododin.dynamic_entity.entity.PropertyDescriptor descriptor}</code>s
+   * Please note, the <code>{@link ru.rododin.dynamic_entity_engine.entity.PropertyDescriptor descriptor}</code>s
    * are saved in an internal map and if a descriptor is already in the map, it will be used
    * instead of the given one. Such behavior allows usage of the same descriptors for all the properties
    * based on the same <code>name</code>, <code>valueClass</code> and <code>defaultValue</code>.
-   * @param descriptor the <code>{@link ru.rododin.dynamic_entity.entity.PropertyDescriptor}</code>
+   * @param descriptor the <code>{@link ru.rododin.dynamic_entity_engine.entity.PropertyDescriptor}</code>
    * @throws NullPointerException if the given <code>descriptor</code> is <code>null</code>
    */
   @SuppressWarnings("unchecked")
@@ -55,10 +55,10 @@ public abstract class AbstractProperty <Value>
   }
 
   /**
-   * Creates a new <code>{@link ru.rododin.dynamic_entity.entity.Property}</code>
+   * Creates a new <code>{@link ru.rododin.dynamic_entity_engine.entity.Property}</code>
    * instance using the given <code>name</code>, <code>valueClass</code> and <code>defaultValue</code>.
-   * @see #AbstractProperty(ru.rododin.dynamic_entity.entity.PropertyDescriptor)
-   * @see ru.rododin.dynamic_entity.entity.PropertyDescriptor
+   * @see #AbstractProperty(ru.rododin.dynamic_entity_engine.entity.PropertyDescriptor)
+   * @see ru.rododin.dynamic_entity_engine.entity.PropertyDescriptor
    * @param name the property name
    * @param valueClass the property value class
    * @param defaultValue the property default value
@@ -75,7 +75,7 @@ public abstract class AbstractProperty <Value>
 
   /**
    * Returns the property descriptor.
-   * @return non-<code>null</code> <code>{@link ru.rododin.dynamic_entity.entity.PropertyDescriptor}</code>
+   * @return non-<code>null</code> <code>{@link ru.rododin.dynamic_entity_engine.entity.PropertyDescriptor}</code>
    *         instance
    */
   public PropertyDescriptor<Value> getDescriptor()
@@ -123,7 +123,7 @@ public abstract class AbstractProperty <Value>
   /**
    * Overrides the standard <code>{@link Object#toString()}</code> method
    * to provide user-friendly textual output of a
-   * <code>{@link ru.rododin.dynamic_entity.entity.Property}</code>.
+   * <code>{@link ru.rododin.dynamic_entity_engine.entity.Property}</code>.
    * @return non-<code>null</code> and non-empty string
    */
   @Override
@@ -138,7 +138,7 @@ public abstract class AbstractProperty <Value>
 
   /**
    * The map avoids existence of 2 equal
-   * <code>{@link ru.rododin.dynamic_entity.entity.PropertyDescriptor}</code>s.
+   * <code>{@link ru.rododin.dynamic_entity_engine.entity.PropertyDescriptor}</code>s.
    */
   private static final Map<PropertyDescriptor, PropertyDescriptor>
     DESCRIPTOR_MAP = new HashMap<PropertyDescriptor, PropertyDescriptor>();

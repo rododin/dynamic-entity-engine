@@ -30,8 +30,8 @@
   What would you do if your business logic must intercept events like <code>propertyChanged</code>
   or <code>propertyAccessed</code>? You have, for instance, 50-60 different entities with about of 10
   properties per entity on average. And you need to intercept different events like <code>propertyChanged</code>
-  or <code>entitySaved</code> sometimes only. Would you add an <i>event listener</i> support into the each
-  getter/setter method where it is required? Or would you add the <i>listener</i> support into all
+  or <code>entitySaved</code> sometimes only. Would you add an <em>event listener</em> support into the each
+  getter/setter method where it is required? Or would you add the <em>listener</em> support into all
   getters/setters just because you don't know when and where it could be required?
   <p/>
   And again about the well-organized classical object-oriented hierarchy...
@@ -100,7 +100,7 @@
   Please note, the current implementation doesn't support listeners or other extended features.
   It just demonstrates the idea.
   <p/>
-  The package <code>ru.rododin.dynamic_entity.unit</code> contains a simple example implementation
+  The package <code>ru.rododin.dynamic_entity_engine.demo.unit</code> contains a simple example implementation
   based on this idea. The example introduces a few <code>Unit</code>s defined by the
   <code>UnitDefinition</code> enumeration. Of course, it is very easy to develop another implementation
   where the units will be specified just using a <code>.properties</code> file or using an XML-configuration

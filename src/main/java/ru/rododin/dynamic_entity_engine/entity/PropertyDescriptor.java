@@ -3,10 +3,10 @@
  * (C) 2006-2009 Rod Odin.
  */
 
-package ru.rododin.dynamic_entity.entity;
+package ru.rododin.dynamic_entity_engine.entity;
 
 /**
- * Represents a definitor for a <code>{@link ru.rododin.dynamic_entity.entity.Property}</code>.
+ * Represents a definitor for a <code>{@link ru.rododin.dynamic_entity_engine.entity.Property}</code>.
  * The definitor introduces the property <code>{@link #getName() name}</code>,
  * its <code>{@link #getValueClass() value class}</code> and defines the
  * property <code>{@link #getDefaultValue() default value}</code>.

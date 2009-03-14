@@ -3,7 +3,7 @@
  * (C) 2006-2009 Rod Odin.
  */
 
-package ru.rododin.dynamic_entity.util;
+package ru.rododin.dynamic_entity_engine.util;
 
 import java.util.ArrayList;
 import java.util.Arrays;

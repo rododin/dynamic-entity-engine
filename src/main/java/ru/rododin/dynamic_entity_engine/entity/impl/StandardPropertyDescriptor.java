@@ -3,13 +3,13 @@
  * (C) 2006-2009 Rod Odin.
  */
 
-package ru.rododin.dynamic_entity.entity.impl;
+package ru.rododin.dynamic_entity_engine.entity.impl;
 
-import ru.rododin.dynamic_entity.entity.PropertyDescriptor;
+import ru.rododin.dynamic_entity_engine.entity.PropertyDescriptor;
 
 /**
  * A standard (default) useful implementation of the
- * <code>{@link ru.rododin.dynamic_entity.entity.PropertyDescriptor}</code> interface.
+ * <code>{@link ru.rododin.dynamic_entity_engine.entity.PropertyDescriptor}</code> interface.
  * @param <Value> the property value generic type
  * @author Rod Odin
  */

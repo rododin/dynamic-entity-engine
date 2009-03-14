@@ -3,7 +3,7 @@
  * (C) 2006-2009 Rod Odin.
  */
 
-package ru.rododin.dynamic_entity.entity;
+package ru.rododin.dynamic_entity_engine.entity;
 
 import java.util.Set;
 
