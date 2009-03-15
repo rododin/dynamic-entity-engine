@@ -33,4 +33,6 @@ public interface PropertyDescriptor <Value>
    * @return <code>null</code> or non-<code>null</code> <code>Value</code> instance
    */
   Value getDefaultValue();
+
+  PropertyListener<Value> getDefaultListener();
 }

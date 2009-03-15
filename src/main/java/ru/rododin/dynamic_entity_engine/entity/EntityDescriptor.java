@@ -23,10 +23,12 @@ public interface EntityDescriptor
   String getName();
 
   /**
-   * Returns a set of <code>{@link ru.rododin.dynamic_entity.entity.PropertyDescriptor}</code>s
+   * Returns a set of <code>{@link ru.rododin.dynamic_entity_engine.entity.PropertyDescriptor}</code>s
    * describing the entity properties.
    * @return <code>null</code>, empty or non-empty ordered set of the property descriptors in the order
    *         the properties (or descriptors) have been registered for the entity
    */
   Set<PropertyDescriptor> getPropertyDescriptors();
+
+  EntityListener getDefaultListener();
 }

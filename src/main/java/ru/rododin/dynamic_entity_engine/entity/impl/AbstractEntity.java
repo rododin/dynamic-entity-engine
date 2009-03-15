@@ -15,6 +15,8 @@ import java.util.Set;
 
 import ru.rododin.dynamic_entity_engine.entity.Entity;
 import ru.rododin.dynamic_entity_engine.entity.EntityDescriptor;
+import ru.rododin.dynamic_entity_engine.entity.EntityEvent;
+import ru.rododin.dynamic_entity_engine.entity.EntityListener;
 import ru.rododin.dynamic_entity_engine.entity.Property;
 import ru.rododin.dynamic_entity_engine.entity.PropertyDescriptor;
 
@@ -27,6 +29,7 @@ import ru.rododin.dynamic_entity_engine.entity.PropertyDescriptor;
  * @author Rod Odin
  */
 public abstract class AbstractEntity
+  extends EntityListenerManager
   implements Entity
 {
 // Constructing ------------------------------------------------------------------------------------
@@ -68,6 +71,9 @@ public abstract class AbstractEntity
       for(PropertyDescriptor propertyDescriptor : propertyDescriptors)
         propertyMap.put(propertyDescriptor.getName(), new AbstractProperty(propertyDescriptor){});
     }
+    EntityListener defaultListener = this.descriptor.getDefaultListener();
+    if(defaultListener != null)
+      addListener(defaultListener);
   }
 
   /**
@@ -109,6 +115,9 @@ public abstract class AbstractEntity
       else
         this.descriptor = d;
     }
+    EntityListener defaultListener = this.descriptor.getDefaultListener();
+    if(defaultListener != null)
+      addListener(defaultListener);
   }
 
   /**
@@ -151,7 +160,10 @@ public abstract class AbstractEntity
    */
   public Property getProperty(String propertyName)
   {
-    return propertyMap != null ? propertyMap.get(propertyName) : null;
+    Property rv = propertyMap != null ? propertyMap.get(propertyName) : null;
+    if(getListenerSet() != null)
+      entityAccessed(new EntityEvent(this, rv));
+    return rv;
   }
 
   /**
@@ -163,7 +175,10 @@ public abstract class AbstractEntity
    */
   public Iterator<Property> getPropertyIterator()
   {
-    return propertyMap != null ? propertyMap.values().iterator() : null;
+    Iterator<Property> rv = propertyMap != null ? propertyMap.values().iterator() : null;
+    if(getListenerSet() != null)
+      entityAccessed(new EntityEvent(this));
+    return rv;
   }
 
   /**
