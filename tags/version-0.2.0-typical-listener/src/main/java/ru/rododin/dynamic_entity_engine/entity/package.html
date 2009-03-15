@@ -1,0 +1,110 @@
+<!DOCTYPE HTML PUBLIC
+  "-//W3C//DTD HTML 4.01 Transitional//EN"
+  "http://www.w3.org/TR/html4/loose.dtd"
+>
+
+<html>
+
+<head>
+  <title>Dynamic Entity Engine</title>
+</head>
+
+<body>
+<h1>Dynamic Entity Engine - Overview</h1>
+  <h2>Motivation</h2>
+  <p/>
+  Do you know about the "Heroes of Might and Magic" game, or probably about "Civilization"?
+  Or about another game with lots of different units like Dragons, Knights, Archers,
+  or maybe Tanks, Super-sonic Fighters and Missile Cruisers?
+  Or probably you have a business application with dozens of different business entities
+  your business logic works with?
+  <p/>
+  If you have to develop something like this, how would you like to act?
+  Would you manually create dozens or hundreds of appropriate classes with dozens of getters/setters inside
+  just to describe all your entities? Of course you are an familiar OO-developer and you will build
+  a well organized hierarchy of the entities (or game units). And if your entities must be stored persistently,
+  of course, you will map them onto the relational tables using JPA-annotations. And then you will write
+  tones of the business logic (dozens of session beans) to manage and process somehow all of these
+  plain entities - the entities just consisting of sets of properties defined using simple getter/setter methods.
+  <p/>
+  What would you do if your business logic must intercept events like <code>propertyChanged</code>
+  or <code>propertyAccessed</code>? You have, for instance, 50-60 different entities with about of 10
+  properties per entity on average. And you need to intercept different events like <code>propertyChanged</code>
+  or <code>entitySaved</code> sometimes only. Would you add an <em>event listener</em> support into the each
+  getter/setter method where it is required? Or would you add the <em>listener</em> support into all
+  getters/setters just because you don't know when and where it could be required?
+  <p/>
+  And again about the well-organized classical object-oriented hierarchy...
+  E.g., all your entities have the property <code>id</code> playing the primary key role.
+  Mostly this <code>id</code> is an <code>Integer</code>, but in a few cases it is a <code>String</code>.
+  Many of your entities have the property <code>name</code>, e.g. <code>User</code>, or <code>Client</code>,
+  or <code>Organization</code>. <code>User</code> and <code>Client</code> are people, so,
+  you may describe their common properties
+  (<code>name</code>, <code>Surname</code>, <code>birthDate</code>, <code>taxNumber</code>, etc.)
+  in the <code>Person</code> class. The <code>name</code> property must go into the abstract
+  <code>NamedEntity</code> class, because <code>Organization</code> has this property too.
+  But <code>taxNumber</code> is applicable for <code>Client</code>s only, so it must go into the
+  <code>Client</code> class. However an <code>Organization</code> may also play the <code>Client</code> role,
+  so the <code>Client</code> is not a <code>Person</code>, it is just an abstract <code>Client</code>
+  extended by <code>ClientPerson</code> and <code>ClientOrganization</code> classes. In such situation
+  the <code>ClientPerson</code> must extend two classes: <code>Person</code> and <code>Client</code>.
+  And similar the <code>ClientOrganization</code> must extend
+  <code>Organization</code> and <code>Client</code>.
+  In Java you have no multiple inheritance and interfaces are not working because these properties must be
+  marked with JPA-annotations. Any case, even if it would be possible to work with multiple interfaces,
+  you have to duplicate the code implementing the same properties and/or you have to
+  aggregate single implementations and duplicate the code accessing these aggregated implementations.
+  In other words, the aggregation of implementations is also a code duplication.
+  <p/>
+  I hope, that's enough to ask you, would you really like to do all of this routine and repeatable work?
+  Would you really like to write manually dozens of classes with hundreds of properties?
+  Would you like to think over the listener support and well organized hierarchies?
+  Or just would you like to do a lot of repeatable work?
+  <p/>
+  I hope you need a pragmatic and optimal implementation of your task with a minimum of duplicated code
+  and minimum of the routine and repeatable work from your side. If so, let me to ask you,
+  do you really need the exact relational mapping between a business model entity and Java class?
+  If no, let me to propose the solution implemented in this package and its sub-packages.
+
+  <h2>Solution</h2>
+  The idea of the solution is based on the meta-view of the system. Each entity is just an entity,
+  and each entity property is just a property. So, everything you need is just the <code>Property</code>
+  class for definition of any named property, and the <code>Entity</code> class for defining a named entity
+  with a set of child properties.
+  <p/>
+  So, each <code>Property</code> has a <code>name</code> and a <code>value</code>. Of course it would be nice
+  to extend the <code>Property</code> with a <code>valueClass</code> definition and <code>defaultValue</code>.
+  Further extension may include a support for <code>PropertyListener</code> and any other things you would need.
+  <p/>
+  Similar, each <code>Entity</code> has at least a <code>name</code> and a set of child <code>Properties</code>.
+  Further you may extend it with an <code>EntityListener</code> and other things.
+  <p/>
+  Of course, you may say, such solution is not optimal, because each <code>Property</code>
+  except the <code>value</code> must also store its <code>name</code>, its <code>defaultValue</code>, etc.
+  And the same is with the <code>Entity</code> - each <code>Entity</code> must know its <code>name</code>
+  and what's else. So, e.g. if we will have just a thouthand of different instances of the <code>Ware</code>
+  entity, our <code>Entity</code> class will store the name "Ware" thouthand times.
+  Each of these thouthand instances will have, e.g., three properties (<code>id</code>, <code>name</code> and
+  <code>price</code>). So, these three strings ("id", "name" and "price") will be stored each for 1000 times too.
+  The same is for <code>defaultValue</code>, etc.
+  <p/>
+  To avoid such situation we introduce the <code>PropertyDescriptor</code> and <code>EntityDescriptor</code>
+  appropriately. These classes include any common information about the properties and entities appropriately
+  (<code>name</code>, <code>valueClass</code>, <code>defaultValue</code>, etc.).
+  So, each <code>Property</code> and <code>Entity</code> must know just about their descriptors.
+  It is just a single reference per object.
+  It is also possible to avoid duplication of descriptors themselves. Internal mechanism stores the descriptors
+  in internal maps and if create a new property (even for another entity) with the same common attributes,
+  the existing descriptor will be used. All of this is done transparently for the end-developer (for you).
+  <p/>
+  Please note, the current implementation doesn't support listeners or other extended features.
+  It just demonstrates the idea.
+  <p/>
+  The package <code>ru.rododin.dynamic_entity_engine.demo.unit</code> contains a simple example implementation
+  based on this idea. The example introduces a few <code>Unit</code>s defined by the
+  <code>UnitDefinition</code> enumeration. Of course, it is very easy to develop another implementation
+  where the units will be specified just using a <code>.properties</code> file or using an XML-configuration
+  file.
+</body>
+
+</html>
