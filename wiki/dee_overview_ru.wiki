@@ -1,15 +1,15 @@
 #labels dynamic,alternative,entity,engine,enum,enumeration,repeatable,code
 = Dynamic Entity Engine – Обзор =
 
-Автор: Род Один
+Автор: [mailto:rododin@gmail.com Род Один]
 
 Опубликовано: Март 2009
 
-English edition is provided here: http://code.google.com/p/dynamic-entity-engine/
+English edition is provided [http://code.google.com/p/dynamic-entity-engine here].
 
 == Мотивация ==
 
-Знакомы ли Вы с игрой «Герои Меча и Магии» или с «Цивилизацией»? Или с любой другой игрой, где имеется множество различных юнитов, наподобие Драконов, Рыцарей, Лучников, или, быть может, Танков, Сверхзвуковых Истребителей и Ракетных Крейсеров? Или Вы разрабатываете бизнес-приложение с десятками различных бизнес-сущностей, обрабатываемых Вашей бизнес-логикой?
+Знакомы ли Вы с игрой [http://ru.wikipedia.org/wiki/Heroes_of_Might_and_Magic Герои Меча и Магии] или с [http://ru.wikipedia.org/wiki/Civilization_IV Цивилизацией]? Или с любой другой игрой, где имеется множество различных юнитов, наподобие Драконов, Рыцарей, Лучников, или, быть может, Танков, Сверхзвуковых Истребителей и Ракетных Крейсеров? Или Вы разрабатываете бизнес-приложение с десятками различных бизнес-сущностей, обрабатываемых Вашей бизнес-логикой?
 
 Если Вы действительно разрабатываете что-то такое, как бы Вы поступили?
 Создадите ли Вы десятки и сотни классов, по одному на каждую сущность, с десятками `get`/`set`-методов, представляющих их свойства (properties)? Конечно же, Вы – один из опытнейших объектно-ориентированных разработчиков и Вы построите прекрасно-продуманную иерархию сущностей (или игровых юнитов). И если Ваши сущности должны сохраняться долговременно (в БД, например), то Вы пропишите их отображения на реляционные таблицы с помощью JPA-аннотаций. После чего Вы напишете тонны бизнес-логики (десятки сессионных бинов), чтобы как-то управлять и обрабатывать эти плоские сущности – сущности, просто состоящие из наборов свойств, задаваемых парами `get`/`set`-методов.
@@ -38,11 +38,38 @@ http://dynamic-entity-engine.googlecode.com/files/ExampleHierarchy_small.PNG
 
 Для устранения такой ситуации мы вводим понятие `PropertyDescriptor`-а и `EntityDescriptor`-а соответственно. Эти классы включают любую общую информации о свойствах и сущностях соответственно (`name`, `valueClass`, `defaultValue` для `PropertyDescriptor`-а; и, как минимум, `name` для `EntityDescriptor`-а). Таким образом, каждая `Entity` и каждое `Property` должны знать только о своих дескрипторах, а это, всего лишь, одна ссылка на объект. При этом, конечно же, возможно устранить дублирование самих дескрипторов. Внутренний механизм сохраняет каждый уникальный дескриптор во внутренней карте и если Вы создаёте ещё одно `Property` (возможно даже для другой `Entity`) с одинаковым набором базовых параметров, то существующий дескриптор будет использован вместо сохранения дубликата. Всё это сделано прозрачно для конечного разработчика, т.е. для Вас.
 
-Пожалуйста, обратите внимание, – данная реализация (версия 0.1) не поддерживает _слушателей событий_ и прочих «наворотов», она просто демонстрирует идею.
-
 == Пример ==
 
 Пакет `ru.rododin.dynamic_entity_engine.demo.unit` содержит простой пример использования данной идеи. Пример выводит понятие `Unit`-а, определяемого посредством перечисления `UnitDefinition`. Конечно, совсем несложно предложить другую реализацию, где все `Unit`-ы будут задаваться посредством `.properties`-файлов или посредством XML-конфигурации.
+
+Я бы предложил смотреть исходники в следующем порядке:
+ * [http://code.google.com/p/dynamic-entity-engine/source/browse/tags/version-0.1.1-base-idea/src/main/java/ru/rododin/dynamic_entity_engine/demo/unit/UnitDefinition.java UnitDefinition]
+ * [http://code.google.com/p/dynamic-entity-engine/source/browse/tags/version-0.1.1-base-idea/src/main/java/ru/rododin/dynamic_entity_engine/demo/unit/UnitPropertyDefinition.java UnitPropertyDefinition]
+ * [http://code.google.com/p/dynamic-entity-engine/source/browse/tags/version-0.1.1-base-idea/src/main/java/ru/rododin/dynamic_entity_engine/demo/unit/Unit.java Unit]
+ * [http://code.google.com/p/dynamic-entity-engine/source/browse/tags/version-0.1.1-base-idea/src/main/java/ru/rododin/dynamic_entity_engine/entity/Entity.java Entity]
+ * [http://code.google.com/p/dynamic-entity-engine/source/browse/tags/version-0.1.1-base-idea/src/main/java/ru/rododin/dynamic_entity_engine/entity/Property.java Property]
+ * [http://code.google.com/p/dynamic-entity-engine/source/browse/tags/version-0.1.1-base-idea/src/main/java/ru/rododin/dynamic_entity_engine/entity/EntityDescriptor.java EntityDescriptor]
+ * [http://code.google.com/p/dynamic-entity-engine/source/browse/tags/version-0.1.1-base-idea/src/main/java/ru/rododin/dynamic_entity_engine/entity/PropertyDescriptor.java PropertyDescriptor]
+ * [http://code.google.com/p/dynamic-entity-engine/source/browse/tags/version-0.1.1-base-idea/src/main/java/ru/rododin/dynamic_entity_engine/entity/impl/AbstractEntity.java AbstractEntity]
+ * [http://code.google.com/p/dynamic-entity-engine/source/browse/tags/version-0.1.1-base-idea/src/main/java/ru/rododin/dynamic_entity_engine/entity/impl/AbstractProperty.java AbstractProperty]
+ * [http://code.google.com/p/dynamic-entity-engine/source/browse/tags/version-0.1.1-base-idea/src/main/java/ru/rododin/dynamic_entity_engine/entity/impl/StandardEntityDescriptor.java StandardEntityDescriptor]
+ * [http://code.google.com/p/dynamic-entity-engine/source/browse/tags/version-0.1.1-base-idea/src/main/java/ru/rododin/dynamic_entity_engine/entity/impl/StandardPropertyDescriptor.java StandardPropertyDescriptor]
+
+== Исходные коды ==
+
+Исходные коды находятся [http://code.google.com/p/dynamic-entity-engine/source/checkout здесь].
+
+«Голая» реализация базовой идеи доступна в этом тэге: <br/>
+[http://dynamic-entity-engine.googlecode.com/svn/tags/version-0.1.1-base-idea]
+
+Тэг `version-0.2.0-typical-listener` содержит типичную реализацию поддержки для `Property`- и `EntityListener`-ов: <br/>
+[http://dynamic-entity-engine.googlecode.com/svn/tags/version-0.2.0-typical-listener] <br/>
+Данная реализация не является оптимальной, поскольку в ней имеется повторяющейся код. См., например, [http://code.google.com/p/dynamic-entity-engine/source/browse/tags/version-0.2.0-typical-listener/src/main/java/ru/rododin/dynamic_entity_engine/entity/impl/EntityListenerManager.java EntityListenerManager]. Как можете видеть, методы обработки каждого события `entityXxx` практически полностью идентичны. Конечно, можно написать единую реализацию таких методов с использованием механизма рефлексии, т.е. по строковому идентификатору находить нужный метод и вызывать его через рефлексию. Такой подход, однако, представляется неоптимальным, т.к. в реальной системе это может привести к вызову тысяч слушателей таким образом. Сейчас мною ведётся работа над альтернативной реализацией поддержки для слушателей событий (TODO 3), идея которой аналогична базовой идее данного фреймворка, когда набор событий и их слушателей определяется перечислением.
+
+Головная ветка содержит рабочую копию исходников: <br/>
+[http://dynamic-entity-engine.googlecode.com/svn/trunk] <br/>
+
+Проект основан на [http://maven.apache.org Maven]-е и содержит стандартный POM-файл. Помимо этого, имеется проект для [http://www.jetbrains.com/idea IntelliJ IDEA]. Надеюсь, Вы сумеете выгрузить исходники из [http://ru.wikipedia.org/wiki/Subversion SVN] (см. также: [http://tortoisesvn.tigris.org]), собрать и запустить их с помощью Maven-а или IDE-и.
 
 == TODO ==
 
@@ -50,9 +77,3 @@ http://dynamic-entity-engine.googlecode.com/files/ExampleHierarchy_small.PNG
  # Добавить поддержку _слушателей событий_ в механизм (`PropertyListener` и `EntityListener`).
  # БОЛЬШОЙ TODO: Продумать и предоставить концепцию ORM-фреймворка для данного механизма. Исследовать вопрос, насколько Hibernate или Top-Link (или что-то ещё) могут быть полезны и/или применимы для разработки такого специализированного ORM-фреймворка. Основная задача здесь - найти простейший и быстрейший способ маппинга именованных сущностей и свойств на таблицы и поля базы данных.
  # Добавить поддержку для `UnitRenderer` и `UnitController` в сущность `Unit` для демонстрации расширяемости данного подхода.
-
-== Исходные коды ==
-
-Исходные коды находятся здесь: http://code.google.com/p/dynamic-entity-engine/source/checkout
-
-Проект основан на Maven-е ( http://maven.apache.org/ ) и содержит стандартный POM-файл. Помимо этого, имеется набор проектных файлов для IntelliJ IDEA ( http://www.jetbrains.com/idea ). Надеюсь, Вы сумеете выгрузить исходники из SVN, собрать и запустить их с помощью Maven-а или IDE-и.
