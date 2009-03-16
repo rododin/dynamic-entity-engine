@@ -34,6 +34,12 @@ But ok, would you probably exchange the hierarchy of units using an enumeration 
 So, it is impossible to use an enumerated `Unit` class without losing of the business model consistence. What to do? 
 Would you probably exchange the hierarchy using the classical (again classical) aggregation technique? Do you really want to do that? Let’s see…
 
-=== Problem 2 – `Talent` and `Drawback` hierarchies ===
+=== Problem 2 – `Weapon`, `Armor` and `Skill` hierarchies ===
 
-*TODO: complete the document*
+== NOTES – some points to discuss ==
+ * The business entity model is usually a plain model. In other words, the entity beans are just primitive classes without any behavior inside consisting of just primitive getters/setters. In general polymorphism is not used in the entity beans. Business logic must use often the `instanceof` operators to switch behavior for different subtypes. So, there are no reasons to have exact mapping between DB tables and Java classes.
+ * Currently I don’t know how the ORMs like Hibernate process the _lazy-loading_ functionality. But in our engine the _lazy-loading_ has to be based on listeners defined for the properties representing sub-entities of collections of sub-entities.
+
+== TODO ==
+
+ * *Complete the document*
