@@ -55,6 +55,9 @@ http://dynamic-entity-engine.googlecode.com/files/ExampleHierarchy_small.PNG
  * [http://code.google.com/p/dynamic-entity-engine/source/browse/tags/version-0.1.1-base-idea/src/main/java/ru/rododin/dynamic_entity_engine/entity/impl/StandardEntityDescriptor.java StandardEntityDescriptor]
  * [http://code.google.com/p/dynamic-entity-engine/source/browse/tags/version-0.1.1-base-idea/src/main/java/ru/rododin/dynamic_entity_engine/entity/impl/StandardPropertyDescriptor.java StandardPropertyDescriptor]
 
+Результирующая диаграмма классов выглядит следующим образом: <br/>
+[http://dynamic-entity-engine.googlecode.com/files/BaseIdeaClassDiagram.png]
+
 == Исходные коды ==
 
 Исходные коды находятся [http://code.google.com/p/dynamic-entity-engine/source/checkout здесь].
@@ -73,7 +76,7 @@ http://dynamic-entity-engine.googlecode.com/files/ExampleHierarchy_small.PNG
 
 == TODO ==
 
- # Предоставить диаграмму классов (полученную реверс-инженирингом) для данного механизма.
+ # ~~Предоставить диаграмму классов (полученную реверс-инженирингом) для данного механизма~~ – сделано.
  # ~~Добавить поддержку _слушателей событий_ в механизм (`PropertyListener` и `EntityListener`)~~ – типичная реализация завершена в версии 0.2.
  # Переделать поддержку слушателей событий, используя базовую идею данного фреймворка (реализация мета-слушателя).
  # Добавить поддержку для `UnitRenderer` и `UnitController` в сущность `Unit` для демонстрации расширяемости данного подхода.
