@@ -1,7 +1,7 @@
 #labels dynamic,alternative,entity,engine,enum,enumeration,repeatable,code
 = Dynamic Entity Engine – Обзор =
 
-Автор: [mailto:rododin@gmail.com Род Один]
+Автор: [mailto:rododin@gmail.com Род Один] ,,(Николай Чеботарёв),,
 
 Опубликовано: Март 2009
 
