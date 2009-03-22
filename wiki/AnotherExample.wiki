@@ -1,6 +1,8 @@
 #labels OO-hierarchy,aggregation,enumeration
 = Yet an example of classical OO-hierarchy difficulty =
 
+Author: [mailto:rododin@gmail.com Rod Odin] ,,(Nikolay Chebotaryov),,
+
 == Introduction ==
 
 You design a game like the well known “Heroes of Might and Magic”. You have dozens or probably hundreds of miscellaneous units like Knights, Archers, Orcs, Vampires, Mages, Dragons, etc. I would classify the units from the two following view-points:
