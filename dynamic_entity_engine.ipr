@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project relativePaths="false" version="4">
+<project relativePaths="true" version="4">
   <component name="AntConfiguration">
     <defaultAnt bundledAnt="true" />
   </component>
@@ -82,7 +82,7 @@
     <option name="DEBUGGING_INFO" value="true" />
     <option name="GENERATE_NO_WARNINGS" value="false" />
     <option name="DEPRECATION" value="true" />
-    <option name="ADDITIONAL_OPTIONS_STRING" value="" />
+    <option name="ADDITIONAL_OPTIONS_STRING" value="-target 1.5" />
     <option name="MAXIMUM_HEAP_SIZE" value="128" />
   </component>
   <component name="JavadocGenerationManager">
@@ -246,7 +246,7 @@
   </component>
   <component name="ProjectFileVersion" converted="true" />
   <component name="ProjectKey">
-    <option name="state" value="project://D:\Development\Public\dynamic-entity-engine\dynamic_entity_engine.ipr" />
+    <option name="state" value="https://dynamic-entity-engine.googlecode.com/svn/trunk/dynamic_entity_engine.ipr" />
   </component>
   <component name="ProjectModuleManager">
     <modules>

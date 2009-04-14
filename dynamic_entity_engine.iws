@@ -2,37 +2,22 @@
 <project relativePaths="false" version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/rododin/dynamic_entity_engine/entity/impl/AbstractProperty.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/rododin/dynamic_entity_engine/entity/impl/StandardEntityDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/rododin/dynamic_entity_engine/entity/impl/StandardPropertyDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/rododin/dynamic_entity_engine/demo/unit/UnitDefinition.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/rododin/dynamic_entity_engine/demo/unit/UnitPropertyDefinition.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/rododin/dynamic_entity_engine/entity/package.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/rododin/dynamic_entity_engine" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/rododin/dynamic_entity_engine/entity/Entity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/rododin/dynamic_entity_engine/entity/Property.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/rododin/dynamic_entity_engine/util" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/rododin/dynamic_entity_engine/Main.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/rododin/dynamic_entity_engine/entity/impl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/rododin/dynamic_entity_engine/entity/EntityDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/rododin" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/rododin/dynamic_entity_engine/util/Collections.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/rododin/dynamic_entity_engine/demo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/rododin/dynamic_entity_engine/entity/PropertyDescriptor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$" afterPath="$PROJECT_DIR$" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/rododin/dynamic_entity_engine/entity" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/rododin/dynamic_entity_engine/demo/unit" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/rododin/dynamic_entity_engine/entity/impl/AbstractEntity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/rododin/dynamic_entity_engine/demo/unit/Unit.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/rododin/dynamic_entity_engine/listener_engine" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/rododin/dynamic_entity_engine/entity/impl/StandardPropertyDescriptor.java" afterPath="$PROJECT_DIR$/src/main/java/ru/rododin/dynamic_entity_engine/entity/impl/StandardPropertyDescriptor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/rododin/dynamic_entity_engine/entity/listener/PropertyListenerDefinition.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/rododin/dynamic_entity_engine/entity/impl/AbstractEntity.java" afterPath="$PROJECT_DIR$/src/main/java/ru/rododin/dynamic_entity_engine/entity/impl/AbstractEntity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dynamic_entity_engine.iws" afterPath="$PROJECT_DIR$/dynamic_entity_engine.iws" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/rododin/dynamic_entity_engine/entity/impl/StandardEntityDescriptor.java" afterPath="$PROJECT_DIR$/src/main/java/ru/rododin/dynamic_entity_engine/entity/impl/StandardEntityDescriptor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/rododin/dynamic_entity_engine/entity/EntityDescriptor.java" afterPath="$PROJECT_DIR$/src/main/java/ru/rododin/dynamic_entity_engine/entity/EntityDescriptor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/rododin/dynamic_entity_engine/entity/listener/PropertyEventDefinition.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dynamic_entity_engine.iml" afterPath="$PROJECT_DIR$/dynamic_entity_engine.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/rododin/dynamic_entity_engine/entity/listener" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/rododin/dynamic_entity_engine/entity/impl/AbstractProperty.java" afterPath="$PROJECT_DIR$/src/main/java/ru/rododin/dynamic_entity_engine/entity/impl/AbstractProperty.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/rododin/dynamic_entity_engine/entity/PropertyDescriptor.java" afterPath="$PROJECT_DIR$/src/main/java/ru/rododin/dynamic_entity_engine/entity/PropertyDescriptor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dynamic_entity_engine.ipr" afterPath="$PROJECT_DIR$/dynamic_entity_engine.ipr" />
     </list>
-    <ignored path=".idea/workspace.xml" />
     <ignored path="dynamic_entity_engine.iws" />
+    <ignored path=".idea/workspace.xml" />
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="Commander">
@@ -221,10 +206,163 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="PropertyDescriptor.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/rododin/dynamic_entity_engine/entity/PropertyDescriptor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="16" selection-start="373" selection-end="373" vertical-scroll-proportion="0.024067389">
+            <state line="36" column="0" selection-start="1080" selection-end="1080" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Property.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/rododin/dynamic_entity_engine/entity/Property.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="17" selection-start="519" selection-end="519" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EntityDescriptor.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/rododin/dynamic_entity_engine/entity/EntityDescriptor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="0" selection-start="955" selection-end="955" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Entity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/rododin/dynamic_entity_engine/entity/Entity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="17" selection-start="414" selection-end="414" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StandardPropertyDescriptor.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/rododin/dynamic_entity_engine/entity/impl/StandardPropertyDescriptor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="109" column="4" selection-start="3646" selection-end="3646" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StandardEntityDescriptor.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/rododin/dynamic_entity_engine/entity/impl/StandardEntityDescriptor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="77" column="39" selection-start="2663" selection-end="2663" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AbstractProperty.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/rododin/dynamic_entity_engine/entity/impl/AbstractProperty.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="119" column="0" selection-start="4569" selection-end="4569" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AbstractEntity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/rododin/dynamic_entity_engine/entity/impl/AbstractEntity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="22" selection-start="915" selection-end="915" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Unit.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/rododin/dynamic_entity_engine/demo/unit/Unit.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="13" selection-start="624" selection-end="624" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UnitPropertyDefinition.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/rododin/dynamic_entity_engine/demo/unit/UnitPropertyDefinition.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="12" selection-start="1011" selection-end="1011" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UnitDefinition.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/rododin/dynamic_entity_engine/demo/unit/UnitDefinition.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="12" selection-start="660" selection-end="660" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PropertyEventDefinition.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/rododin/dynamic_entity_engine/entity/listener/PropertyEventDefinition.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="16" selection-start="557" selection-end="557" vertical-scroll-proportion="0.4903226">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Event.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/obsolete/java/ru/rododin/dynamic_entity_engine/entity/Event.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PropertyEvent.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/obsolete/java/ru/rododin/dynamic_entity_engine/entity/PropertyEvent.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EntityEvent.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/obsolete/java/ru/rododin/dynamic_entity_engine/entity/EntityEvent.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PropertyListener.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/obsolete/java/ru/rododin/dynamic_entity_engine/entity/PropertyListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EntityListener.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/obsolete/java/ru/rododin/dynamic_entity_engine/entity/EntityListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PropertyListenerDefinition.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/rododin/dynamic_entity_engine/entity/listener/PropertyListenerDefinition.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="0" selection-start="215" selection-end="215" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -380,6 +518,136 @@
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
+          <option name="myItemId" value="obsolete" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="java" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="ru" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="rododin" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="dynamic_entity_engine" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="util" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="dynamic_entity_engine" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="dynamic_entity_engine" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="dynamic-entity-engine" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="src" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="obsolete" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="java" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="ru" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="rododin" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="dynamic_entity_engine" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="entity" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="dynamic_entity_engine" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="dynamic_entity_engine" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="dynamic-entity-engine" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="src" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="obsolete" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="java" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="ru" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="rododin" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="dynamic_entity_engine" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="entity" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="impl" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="dynamic_entity_engine" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="dynamic_entity_engine" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="dynamic-entity-engine" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="src" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
           <option name="myItemId" value="main" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
@@ -389,6 +657,184 @@
         </PATH_ELEMENT>
         <PATH_ELEMENT>
           <option name="myItemId" value="dynamic_entity_engine" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="dynamic_entity_engine" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="dynamic_entity_engine" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="dynamic-entity-engine" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="src" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="main" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="java" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="dynamic_entity_engine" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="util" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="dynamic_entity_engine" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="dynamic_entity_engine" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="dynamic-entity-engine" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="src" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="main" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="java" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="dynamic_entity_engine" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="entity" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="dynamic_entity_engine" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="dynamic_entity_engine" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="dynamic-entity-engine" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="src" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="main" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="java" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="dynamic_entity_engine" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="entity" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="listener" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="dynamic_entity_engine" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="dynamic_entity_engine" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="dynamic-entity-engine" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="src" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="main" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="java" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="dynamic_entity_engine" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="entity" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="impl" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="dynamic_entity_engine" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="dynamic_entity_engine" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="dynamic-entity-engine" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="src" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="main" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="java" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="dynamic_entity_engine" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="unit" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
       </PATH>
@@ -420,25 +866,97 @@
     <view id="ClasspathPane" />
   </component>
   <component name="PropertiesComponent">
-    <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="project.structure.last.edited" value="Project" />
-    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="project.structure.proportion" value="0.0" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="RunManagerConfig.showSettingsBeforeRunnig" value="false" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
-    <property name="GoToClass.includeLibraries" value="false" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="GoToClass.includeLibraries" value="false" />
     <property name="dynamic.classpath" value="false" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="ru.rododin.dynamic_entity_engine.entity.listener" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.Maven-built">
+    <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myCoreSettings">
+          <MavenGeneralSettings>
+            <option name="checksumPolicy" value="fail" />
+            <option name="failureBehavior" value="fail-fast" />
+            <option name="localRepository" value="" />
+            <option name="mavenHome" value="" />
+            <option name="mavenSettingsFile" value="" />
+            <option name="nonRecursive" value="false" />
+            <option name="pluginUpdatePolicy" value="false" />
+            <option name="printErrorStackTraces" value="false" />
+            <option name="usePluginRegistry" value="false" />
+            <option name="workOffline" value="false" />
+          </MavenGeneralSettings>
+        </option>
+        <option name="myRunnerSettings">
+          <MavenRunnerSettings>
+            <option name="jreName" value="1.6" />
+            <option name="mavenProperties">
+              <map />
+            </option>
+            <option name="runMavenInBackground" value="false" />
+            <option name="skipTests" value="false" />
+            <option name="vmOptions" value="" />
+          </MavenRunnerSettings>
+        </option>
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="workingDirPath" value="" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method />
+    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG" enabled="false" merge="false" runner="emma">
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="ADDITIONAL_CLASS_PATH" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
       <module name="" />
@@ -525,6 +1043,22 @@
       <item index="0" class="java.lang.String" itemvalue="Application.IDEA-built" />
       <item index="1" class="java.lang.String" itemvalue="Application.Maven-built" />
     </list>
+    <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
+      <Host>localhost</Host>
+      <Port>5050</Port>
+    </configuration>
+    <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
+      <Host>localhost</Host>
+      <Port>5050</Port>
+    </configuration>
+    <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
+      <Host>localhost</Host>
+      <Port>5050</Port>
+    </configuration>
+    <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
+      <Host>localhost</Host>
+      <Port>5050</Port>
+    </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="StarteamConfiguration">
@@ -554,7 +1088,7 @@
     <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
     <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
     <option name="IGNORE_SPACES_IN_MERGE" value="false" />
-    <configuration useDefault="true">C:\Documents and Settings\RodOdin\Application Data\Subversion</configuration>
+    <configuration useDefault="true">C:\Documents and Settings\Vader\Application Data\Subversion</configuration>
     <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
   </component>
   <component name="TodoView" selected-index="0">
@@ -579,7 +1113,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1288" height="1002" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
@@ -589,16 +1123,16 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" />
       <window_info id="Dataflow to this" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32850778" sideWeight="0.5" order="7" side_tool="false" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32779622" sideWeight="0.5" order="7" side_tool="false" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.108766235" sideWeight="0.6636971" order="3" side_tool="false" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20454545" sideWeight="0.6624714" order="0" side_tool="false" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.11535337" sideWeight="0.66445184" order="3" side_tool="false" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27516234" sideWeight="0.7093822" order="0" side_tool="false" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
       <window_info id="Web Preview" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32951945" sideWeight="0.5" order="2" side_tool="false" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2826087" sideWeight="0.5" order="2" side_tool="false" />
       <window_info id="Aspects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" />
@@ -693,9 +1227,190 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/rododin/dynamic_entity_engine/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="19" selection-start="586" selection-end="586" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="16" selection-start="373" selection-end="373" vertical-scroll-proportion="0.024067389">
+        <state line="10" column="16" selection-start="373" selection-end="373" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://ru.rododin.dynamic_entity_engine.entity.Entity">
+      <provider selected="true" editor-type-id="UmlClassDiagramEditorProvider">
+        <state>
+          <classes>
+            <class fqn="ru.rododin.dynamic_entity_engine.entity.PropertyDescriptor" x="200.0" y="200.0" />
+            <class fqn="ru.rododin.dynamic_entity_engine.demo.unit.Unit" x="200.0" y="805.0" />
+            <class fqn="ru.rododin.dynamic_entity_engine.entity.EntityDescriptor" x="506.0" y="918.0" />
+            <class fqn="ru.rododin.dynamic_entity_engine.demo.unit.UnitPropertyDefinition" x="200.0" y="918.0" />
+            <class fqn="ru.rododin.dynamic_entity_engine.entity.Entity" x="200.0" y="334.0" />
+            <class fqn="ru.rododin.dynamic_entity_engine.entity.impl.StandardPropertyDescriptor" x="200.0" y="536.0" />
+            <class fqn="ru.rododin.dynamic_entity_engine.entity.impl.AbstractEntity" x="200.0" y="670.0" />
+            <class fqn="ru.rododin.dynamic_entity_engine.demo.unit.UnitDefinition" x="506.0" y="918.0" />
+            <class fqn="ru.rododin.dynamic_entity_engine.entity.impl.AbstractProperty" x="291.0" y="805.0" />
+            <class fqn="ru.rododin.dynamic_entity_engine.entity.impl.StandardEntityDescriptor" x="200.0" y="424.0" />
+            <class fqn="ru.rododin.dynamic_entity_engine.entity.Property" x="506.0" y="918.0" />
+          </classes>
+          <packages />
+          <edges>
+            <edge source="ru.rododin.dynamic_entity_engine.entity.impl.StandardPropertyDescriptor" target="ru.rododin.dynamic_entity_engine.entity.PropertyDescriptor" relationship="REALIZATION">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="ru.rododin.dynamic_entity_engine.entity.impl.AbstractProperty" target="ru.rododin.dynamic_entity_engine.entity.Property" relationship="REALIZATION">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="ru.rododin.dynamic_entity_engine.entity.impl.AbstractEntity" target="ru.rododin.dynamic_entity_engine.entity.Entity" relationship="REALIZATION">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="ru.rododin.dynamic_entity_engine.entity.impl.StandardEntityDescriptor" target="ru.rododin.dynamic_entity_engine.entity.EntityDescriptor" relationship="REALIZATION">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="ru.rododin.dynamic_entity_engine.demo.unit.Unit" target="ru.rododin.dynamic_entity_engine.entity.impl.AbstractEntity" relationship="GENERALIZATION">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+          </edges>
+          <settings isCamel="false" isColorManagerEnabled="true" isFieldsVisible="true" isConstructorsVisible="false" isMethodsVisible="false" isShowDependencies="false" isShowInnerClasses="false" defaultVisibility="private" isPropertiesVisible="true" zoom="0.9213759213759214" x="42.0" y="13.0" />
+          <SelectedNodes>
+            <node fqn="ru.rododin.dynamic_entity_engine.entity.Entity" />
+          </SelectedNodes>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/rododin/dynamic_entity_engine/entity/PropertyDescriptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="0" selection-start="1080" selection-end="1080" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/rododin/dynamic_entity_engine/entity/Property.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="17" selection-start="519" selection-end="519" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/rododin/dynamic_entity_engine/entity/EntityDescriptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="0" selection-start="955" selection-end="955" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/rododin/dynamic_entity_engine/entity/Entity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="17" selection-start="414" selection-end="414" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/rododin/dynamic_entity_engine/entity/impl/StandardPropertyDescriptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="109" column="4" selection-start="3646" selection-end="3646" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/rododin/dynamic_entity_engine/entity/impl/StandardEntityDescriptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="77" column="39" selection-start="2663" selection-end="2663" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/rododin/dynamic_entity_engine/entity/impl/AbstractProperty.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="119" column="0" selection-start="4569" selection-end="4569" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/rododin/dynamic_entity_engine/entity/impl/AbstractEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="22" selection-start="915" selection-end="915" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/rododin/dynamic_entity_engine/demo/unit/Unit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="13" selection-start="624" selection-end="624" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/rododin/dynamic_entity_engine/demo/unit/UnitPropertyDefinition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="12" selection-start="1011" selection-end="1011" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/rododin/dynamic_entity_engine/demo/unit/UnitDefinition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="12" selection-start="660" selection-end="660" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/obsolete/java/ru/rododin/dynamic_entity_engine/entity/Event.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/obsolete/java/ru/rododin/dynamic_entity_engine/entity/PropertyEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/obsolete/java/ru/rododin/dynamic_entity_engine/entity/EntityEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/obsolete/java/ru/rododin/dynamic_entity_engine/entity/PropertyListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/obsolete/java/ru/rododin/dynamic_entity_engine/entity/EntityListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/rododin/dynamic_entity_engine/entity/listener/PropertyListenerDefinition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="215" selection-end="215" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/rododin/dynamic_entity_engine/entity/listener/PropertyEventDefinition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="16" selection-start="557" selection-end="557" vertical-scroll-proportion="0.4903226">
           <folding />
         </state>
       </provider>

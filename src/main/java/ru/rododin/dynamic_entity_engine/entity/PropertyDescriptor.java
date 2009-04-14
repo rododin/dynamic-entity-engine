@@ -34,5 +34,4 @@ public interface PropertyDescriptor <Value>
    */
   Value getDefaultValue();
 
-  PropertyListener<Value> getDefaultListener();
 }
