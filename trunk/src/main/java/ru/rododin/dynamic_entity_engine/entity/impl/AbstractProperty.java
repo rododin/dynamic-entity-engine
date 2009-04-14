@@ -7,12 +7,9 @@ package ru.rododin.dynamic_entity_engine.entity.impl;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Set;
 
 import ru.rododin.dynamic_entity_engine.entity.Property;
 import ru.rododin.dynamic_entity_engine.entity.PropertyDescriptor;
-import ru.rododin.dynamic_entity_engine.entity.PropertyEvent;
-import ru.rododin.dynamic_entity_engine.entity.PropertyListener;
 
 /**
  * Represents a default useful implementation of the
@@ -24,7 +21,6 @@ import ru.rododin.dynamic_entity_engine.entity.PropertyListener;
  * @author Rod Odin
  */
 public abstract class AbstractProperty <Value>
-  extends PropertyListenerManager<Value>
   implements Property<Value>
 {
 // Constructing ------------------------------------------------------------------------------------
@@ -56,9 +52,6 @@ public abstract class AbstractProperty <Value>
     else
       this.descriptor = d;
     this.value = this.descriptor.getDefaultValue();
-    PropertyListener<Value> defaultListener = descriptor.getDefaultListener();
-    if(defaultListener != null)
-      addListener(defaultListener);
   }
 
   /**
@@ -98,8 +91,6 @@ public abstract class AbstractProperty <Value>
    */
   public Value getValue()
   {
-    if(getListenerSet() != null)
-      propertyAccessed(new PropertyEvent<Value>(this));
     return value;
   }
 
@@ -110,19 +101,7 @@ public abstract class AbstractProperty <Value>
    */
   public void setValue(Value value)
   {
-    boolean abort = false;
-    if(getListenerSet() != null)
-    {
-      PropertyEvent<Value> propertyEvent = new PropertyEvent<Value>(this, value);
-      propertyChanging(propertyEvent);
-      abort = propertyEvent.getAbortAction();
-    }
-    if(!abort)
-    {
     this.value = value;
-      if(getListenerSet() != null)
-        propertyChanged(new PropertyEvent<Value>(this, value));
-    }
   }
 
   /**
@@ -138,9 +117,6 @@ public abstract class AbstractProperty <Value>
   {
     AbstractProperty<Value> rv = new AbstractProperty(getDescriptor()){};
     rv.setValue(getValue());
-    Set<PropertyListener<Value>> listenerSet = getListenerSet();
-    if(listenerSet != null && !listenerSet.isEmpty())
-      rv.addListeners(listenerSet);
     return rv;
   }
 

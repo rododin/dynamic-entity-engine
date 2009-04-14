@@ -8,7 +8,6 @@ package ru.rododin.dynamic_entity_engine.entity.impl;
 import java.util.Set;
 
 import ru.rododin.dynamic_entity_engine.entity.EntityDescriptor;
-import ru.rododin.dynamic_entity_engine.entity.EntityListener;
 import ru.rododin.dynamic_entity_engine.entity.PropertyDescriptor;
 
 /**
@@ -34,31 +33,10 @@ public class StandardEntityDescriptor
     )
     throws NullPointerException
   {
-    this(name, propertyDescriptors, null);
-  }
-
-  /**
-   * Creates a new <code>{@link ru.rododin.dynamic_entity_engine.entity.EntityDescriptor}</code>
-   * with the given parameters.
-   * @param name the name of the entity
-   * @param propertyDescriptors the set of the
-   *                            <code>{@link ru.rododin.dynamic_entity_engine.entity.PropertyDescriptor}</code>s
-   *                            introducing the entity properties
-   * @param defaultListener the default entity listener to be used with all entities based on this descriptor
-   * @throws NullPointerException if the given name is <code>null</code>
-   */
-  public StandardEntityDescriptor
-    ( String                  name
-    , Set<PropertyDescriptor> propertyDescriptors
-    , EntityListener          defaultListener
-    )
-    throws NullPointerException
-  {
     if(name == null)
       throw new NullPointerException("Entity name must not be null");
     this.name = name;
     this.propertyDescriptors = propertyDescriptors;
-    this.defaultListener = defaultListener;
   }
 
   /**
@@ -81,11 +59,6 @@ public class StandardEntityDescriptor
     return propertyDescriptors;
   }
 
-  public EntityListener getDefaultListener()
-  {
-    return defaultListener;
-  }
-
   /**
    * Auto-generated overriding implementation of the <code>{@link Object#equals(Object)}</code> method.
    * It accounts all the fields: <code>name</code>, <code>propertyDescriptors</code> and
@@ -102,8 +75,7 @@ public class StandardEntityDescriptor
     if(this == o) return true;
     if(o == null || getClass() != o.getClass()) return false;
     StandardEntityDescriptor that = (StandardEntityDescriptor) o;
-    return !(defaultListener != null ? !defaultListener.equals(that.defaultListener) : that.defaultListener != null) &&
-           name.equals(that.name) &&
+    return name.equals(that.name) &&
            !(propertyDescriptors != null ? !propertyDescriptors.equals(that.propertyDescriptors)
                                          : that.propertyDescriptors != null);
   }
@@ -120,12 +92,10 @@ public class StandardEntityDescriptor
   {
     int result = name.hashCode();
     result = 31 * result + (propertyDescriptors != null ? propertyDescriptors.hashCode() : 0);
-    result = 31 * result + (defaultListener != null ? defaultListener.hashCode() : 0);
     return result;
   }
 
   private String name;
   private Set<PropertyDescriptor> propertyDescriptors;
-  private EntityListener defaultListener;
 }
 

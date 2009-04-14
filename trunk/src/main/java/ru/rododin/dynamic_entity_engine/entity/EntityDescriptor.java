@@ -30,5 +30,4 @@ public interface EntityDescriptor
    */
   Set<PropertyDescriptor> getPropertyDescriptors();
 
-  EntityListener getDefaultListener();
 }

@@ -6,7 +6,6 @@
 package ru.rododin.dynamic_entity_engine.entity.impl;
 
 import ru.rododin.dynamic_entity_engine.entity.PropertyDescriptor;
-import ru.rododin.dynamic_entity_engine.entity.PropertyListener;
 
 /**
  * A standard (default) useful implementation of the
@@ -31,25 +30,6 @@ public class StandardPropertyDescriptor<Value>
     )
     throws NullPointerException
   {
-    this(name, valueClass, defaultValue, null);
-  }
-
-  /**
-   * Creates a new <code>PropertyDescriptor</code> with the given parameters.
-   * @param name the name of the property
-   * @param valueClass the <code>{@link Class}</code> object representing the <code>Value</code> generic parameter
-   * @param defaultValue the property default value
-   * @param defaultListener the default property listener to be associated with all properties based on this descriptor
-   * @throws NullPointerException if <code>name</code> or <code>valueClass</code> is <code>null</code>
-   */
-  public StandardPropertyDescriptor
-    ( String                  name
-    , Class<Value>            valueClass
-    , Value                   defaultValue
-    , PropertyListener<Value> defaultListener
-    )
-    throws NullPointerException
-  {
     if(name == null)
       throw new NullPointerException("Property name must not be null");
     if(valueClass == null)
@@ -57,7 +37,6 @@ public class StandardPropertyDescriptor<Value>
     this.name         = name;
     this.valueClass   = valueClass;
     this.defaultValue = defaultValue;
-    this.defaultListener = defaultListener;
   }
 
   /**
@@ -88,11 +67,6 @@ public class StandardPropertyDescriptor<Value>
     return defaultValue;
   }
 
-  public PropertyListener<Value> getDefaultListener()
-  {
-    return defaultListener;
-  }
-
   /**
    * Auto-generated overriding implementation of the <code>{@link Object#equals(Object)}</code> method.
    * It accounts all the fields: <code>name</code>, <code>valueClass</code>, <code>defaultValue</code> and
@@ -109,8 +83,7 @@ public class StandardPropertyDescriptor<Value>
     if(this == o) return true;
     if(o == null || getClass() != o.getClass()) return false;
     StandardPropertyDescriptor that = (StandardPropertyDescriptor) o;
-    return !(defaultListener != null ? !defaultListener.equals(that.defaultListener) : that.defaultListener != null) &&
-           !(defaultValue != null ? !defaultValue.equals(that.defaultValue) : that.defaultValue != null) &&
+    return !(defaultValue != null ? !defaultValue.equals(that.defaultValue) : that.defaultValue != null) &&
            name.equals(that.name) && valueClass.equals(that.valueClass);
   }
 
@@ -127,12 +100,10 @@ public class StandardPropertyDescriptor<Value>
     int result = name.hashCode();
     result = 31 * result + valueClass.hashCode();
     result = 31 * result + (defaultValue != null ? defaultValue.hashCode() : 0);
-    result = 31 * result + (defaultListener != null ? defaultListener.hashCode() : 0);
     return result;
   }
 
   private String       name;
   private Class<Value> valueClass;
   private Value        defaultValue;
-  private PropertyListener<Value> defaultListener;
 }
