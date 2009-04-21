@@ -37,6 +37,7 @@
     <option name="OPEN_IN_BROWSER" value="false" />
     <option name="OUTPUT_DIRECTORY" />
   </component>
+  <component name="IdProvider" IDEtalkID="19437963D522236ED060848FFF5ABE3F" />
   <component name="ImportConfiguration">
     <option name="VENDOR" />
     <option name="RELEASE_TAG" />
@@ -246,7 +247,7 @@
   </component>
   <component name="ProjectFileVersion" converted="true" />
   <component name="ProjectKey">
-    <option name="state" value="https://dynamic-entity-engine.googlecode.com/svn/trunk/dynamic_entity_engine.ipr" />
+    <option name="state" value="project://E:\Development\MyOpenSource\dynamic-entity-engine\dynamic_entity_engine.ipr" />
   </component>
   <component name="ProjectModuleManager">
     <modules>
