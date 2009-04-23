@@ -10,11 +10,8 @@ package ru.rododin.dynamic_entity_engine.listener;
  *
  * @author Rod Odin
  */
-public interface Event <EventData>
+public interface Event
 {
-  String getName();
-  EventData getData();
-  boolean isActionAborted();
-  void setActionAborted(boolean actionAborted);
+  boolean isEventProcessingAborted();
 }
 

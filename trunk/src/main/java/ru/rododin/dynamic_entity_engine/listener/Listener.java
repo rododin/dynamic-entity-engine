@@ -10,9 +10,8 @@ package ru.rododin.dynamic_entity_engine.listener;
  *
  * @author Rod Odin
  */
-public interface Listener <EventData>
+public interface Listener <E extends Event>
 {
-  void beforeActionPerformed(Event<EventData> event) throws ListenerException;
-  void afterActionPerformed (Event<EventData> event) throws ListenerException;
+  void eventOccured(E event) throws ListenerException;
 }
 
